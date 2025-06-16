@@ -1,5 +1,9 @@
 # ✍️ 손글씨 숫자 인식 앱 (MNIST 기반 ONNX 모델)
 
+📎 Docker Hub: https://hub.docker.com/r/clara1201/2025-mnist-canvas/
+
+<br>
+
 사용자가 웹 상에서 직접 숫자를 그리면, ONNX 형식의 MNIST 모델을 통해 해당 숫자가 무엇인지 예측해주는 **인터랙티브 웹 애플리케이션**입니다.  
 Python의 Streamlit을 기반으로 개발되었으며, ONNX Runtime을 통해 경량화된 모델 추론을 빠르게 수행합니다.
 
