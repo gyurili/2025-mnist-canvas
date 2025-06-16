@@ -11,6 +11,8 @@ Python의 Streamlit을 기반으로 개발되었으며, ONNX Runtime을 통해 �
 2. **전처리 이미지 확인** - 모델 입력용 28x28 전처리 이미지 표시
 3. **예측 결과 출력** - 예측 숫자 및 확률 표시 + 차트 시각화
 4. **예측 기록 보기** - 지금까지 저장한 예측 이미지 및 결과 목록
+![image](https://github.com/user-attachments/assets/31615194-9952-431e-beb4-fc184b906b9c)
+
 
 <br>
 
