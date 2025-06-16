@@ -17,7 +17,7 @@ st.set_page_config(
 if "history" not in st.session_state:
     st.session_state.history = []
 
-# ONNX 모델 다운로드 함수
+# ONNX 모델 다운로드
 @st.cache_resource
 def download_model():
     model_url = "https://github.com/onnx/models/raw/refs/heads/main/validated/vision/classification/mnist/model/mnist-8.onnx"
@@ -39,7 +39,7 @@ def load_model():
     session = ort.InferenceSession(model_path)
     return session
 
-# 이미지 전처리 함수
+# 이미지 전처리
 def preprocess_image(image_data):
     if image_data is None:
         return None
@@ -58,7 +58,7 @@ def preprocess_image(image_data):
     img_final = img_normalized.reshape(1, 1, 28, 28)
     return img_final
 
-# 예측 함수
+# 예측
 def predict_digit(model, image):
     if image is None:
         return None, None
@@ -140,11 +140,11 @@ with col3:
         else:
             st.warning("예측된 결과가 없습니다.")
 
-# 저장된 결과 영역
+# 이미지 예측 기록 영역
 st.markdown("---")
 st.header("④ 이미지 예측 기록")
 
-# 초기화 버튼
+# 기록 초기화 버튼
 if st.button("🗑️ 기록 초기화"):
     st.session_state.history.clear()
     st.success("예측 기록이 초기화되었습니다.")
