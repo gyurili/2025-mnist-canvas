@@ -1,4 +1,4 @@
-# ✍️ 손글씨 숫자 인식 앱 (MNIST 기반 ONNX 모델)
+# ✍️ 손글씨 숫자 인식 앱 (MNIST 기반 ONNX 모델) 
 
 📎 Docker Hub: https://hub.docker.com/r/clara1201/2025-mnist-canvas/
 
